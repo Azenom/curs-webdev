@@ -1,0 +1,39 @@
+h1 {
+    color : green;
+    font-size: 50px;
+}
+h2 {
+    color : red;
+}
+
+/* se foloseste . pentru class */
+.titlu {
+    color : yellow;
+}
+
+/* se foloseste # pentru id / identificator */
+#titlu-secundar {
+    color : green;
+}
+
+table {
+    background-color: pink;
+}
+
+button {
+    padding-top: 100px; /* spatiu in interiorul butonului */
+    margin: 100px; /* spatiu inafara butonului */
+    border: 7px dashed red;
+}
+
+li {
+    list-style-type: circle; /* pune cerc in fata elementelor lsitei */
+}
+
+iframe {
+    display: none; /*ascunde elementul din tag-ul iframe */
+}
+
+
+
+
