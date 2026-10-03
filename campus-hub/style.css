@@ -1,39 +1,50 @@
 h1 {
-    color : green;
-    font-size: 50px;
+  color: green;
+  font-size: 50px;
 }
 h2 {
-    color : red;
+  color: red;
 }
 
 /* se foloseste . pentru class */
 .titlu {
-    color : yellow;
+  color: yellow;
 }
 
 /* se foloseste # pentru id / identificator */
 #titlu-secundar {
-    color : green;
+  color: green;
+}
+
+div {
+  color: red;
 }
 
 table {
-    background-color: pink;
+  background-color: pink;
 }
 
 button {
-    padding-top: 100px; /* spatiu in interiorul butonului */
-    margin: 100px; /* spatiu inafara butonului */
-    border: 7px dashed red;
+  padding-top: 100px; /* spatiu in interiorul butonului */
+  margin: 100px; /* spatiu inafara butonului */
+  border: 7px dashed red;
 }
 
 li {
-    list-style-type: circle; /* pune cerc in fata elementelor lsitei */
+  list-style-type: circle; /* pune cerc in fata elementelor lsitei */
 }
 
 iframe {
-    display: none; /*ascunde elementul din tag-ul iframe */
+  display: none; /*ascunde elementul din tag-ul iframe */
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-
+.nav-list {
+    display : flex;
+    gap : 15px;
+}
