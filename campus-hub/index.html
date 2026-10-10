@@ -1,121 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- intern CSS 
-  <style>
-    h1 {
-      color : green;
-    }
-    h2 {
-      color : red;
-    }
-  </style>
-  -->
+    <meta charset="UTF-8">
+    <title>EvolWithUs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Conectarea CSS-ului -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-  <header class="header">
-    <span>Campus Hub</span>
-    <nav class = "nav-list">
-      <a href="#">Evenimente</a>
-      <a href="#">Resurse</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
 
-    <!-- innline CSS style 
-    <h1 style="color:blue">Hackathon Campus Hub</h1>
-    -->
-    <h1 class="titlu">Hackathon Campus Hub</h1>
+    <!-- HEADER -->
+    <header id="acasa">
 
-    <p>O zi de proiecte, cod și pizza pentru toți cursanții.</p>
+        <h1>EvolWithUs</h1>
 
-    <hr />
+        <nav>
+            <a href="#acasa">Acasă</a>
+            <a href="#despre">Despre</a>
+            <a href="#produse">Produse</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <img
-      src="https://www.humaneworld.org/sites/default/files/styles/responsive_3_4_350w/public/2019/03/aa-stinky-tiny-cats.jpg.webp?h=bf654dbc&itok=0CL5qWj7"
-      alt="O pisica"
-    />
+    </header>
 
-    <br />
 
-    <a
-      href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a"
-      target="_blank"
-      >Vezi pagina de înscriere</a
-    >
+    <!-- CONȚINUT PRINCIPAL -->
+    <main>
 
-    <ul>
-      <li>Sâmbătă, ora 10:00</li>
-      <li>Sala A2</li>
-      <li>Aduci laptopul</li>
-    </ul>
+        <section class="container">
 
-    <form action="">
-      <label for="">
-        Email:
-        <input type="text" placeholder="test@gmail.com" />
-      </label>
+            <!-- PRIMA CASUTĂ -->
+            <div class="card">
+                <span class="card-nou"> Card nou</span>
 
-      <button>Ma inscriu</button>
-    </form>
+                <span id="card-pop" class="card-nou"> Active</span>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Ora</th>
-          <th>Activitate</th>
-        </tr>
-      </thead>
+                <h2 id="despre">Despre site</h2>
+                
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
 
-      <tbody>
-        <tr>
-          <td>10:00</td>
-          <td>Deschidere</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+                <a href="https://www.google.com">
+                    Vizitează Google
+                </a>
 
-  <section>
-    <h2 id="titlu-secundar">Resurse recomandate</h2>
+            </div>
 
-    <p>
-      Ce este un <code>&lt;section&gt;</code>? Este un tag folosit
-      pentru a grupa conținut înrudit dintr-o pagină web.
-    </p>
 
-    <ul>
-      <li>
-        <a href="https://developer.mozilla.org" target="_blank"
-          >Documentație MDN Web Docs</a
-        >
-      </li>
-      <li>Ghid complet de HTML pentru începători</li>
-    </ul>
+            <!-- A DOUA CASUTĂ -->
+            <div class="card">
 
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-      title="YouTube video player"
-      frameborder="0"
-      allow="
-        accelerometer;
-        autoplay;
-        clipboard-write;
-        encrypted-media;
-        gyroscope;
-        picture-in-picture;
-      "
-      allowfullscreen
-    >
-    </iframe>
-  </section>
+                <h2>Lucruri de învățat</h2>
+
+                <h3>Listă neordonată</h3>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <h3>Listă ordonată</h3>
+
+                <ol>
+                    <li>Învață HTML</li>
+                    <li>Învață CSS</li>
+                    <li>Învață JavaScript</li>
+                </ol>
+
+            </div>
+
+            <!-- A TREIA CASUTĂ -->
+            <div class="card">
+
+                <h2 id="despre">Despre mine</h2>
+                
+                <p>
+                    <u>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</u>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMAGINE -->
+        <section class="image-section">
+
+            <h2>Imagine</h2>
+            
+            <img
+                src="https://picsum.photos/400/250"
+                alt="Imagine de exemplu"
+            >
+
+        </section>
+
+        <!-- BUTON -->
+        <section class = "buton-section">
+            
+            <button class="buton">Apasă aici</button>
+        
+        </section>
+
+        <!-- TABEL -->
+        <section id="produse" class="table-section">
+
+            <h2>Produse</h2>
+
+            <table>
+
+                <tr>
+                    <th>Produs</th>
+                    <th>Preț</th>
+                    <th>Cantitate</th>
+                </tr>
+
+                <tr>
+                    <td>Laptop</td>
+                    <td>3000 lei</td>
+                    <td>5</td>
+                </tr>
+
+                <tr>
+                    <td>Telefon</td>
+                    <td>2000 lei</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td>Tabletă</td>
+                    <td>1500 lei</td>
+                    <td>7</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+        <p>
+            © 2026 Evolve with us
+        </p>
+
+        <a href="#acasa">
+            Înapoi sus
+        </a>
+
+    </footer>
+
 </body>
 </html>

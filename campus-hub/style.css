@@ -1,50 +1,185 @@
-h1 {
-  color: green;
-  font-size: 50px;
-}
-h2 {
-  color: red;
+/* Stilul general al paginii */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
-/* se foloseste . pentru class */
-.titlu {
-  color: yellow;
+
+/* HEADER */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+    text-align: center;
+
+    position: sticky;
+    top:0;
+    z-index: 3;
 }
 
-/* se foloseste # pentru id / identificator */
-#titlu-secundar {
-  color: green;
+
+/* Link-urile din header */
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-div {
-  color: red;
+
+/* Când trecem cu mouse-ul peste link */
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONȚINUTUL PRINCIPAL */
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Elementele cu class="card" */
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+
+    position : relative;
+}
+
+@media (max-width:768px) {
+    /*
+    min-width — se aplică de la lățimea specificată în sus (≥).
+    max-width — se aplică până la lățimea specificată, inclusiv (≤).
+    width — se aplică atunci când lățimea viewport-ului este exact cea specificată (=).
+    */
+    .container {
+   
+    flex-direction: column;
+    align-items: center;
+    }
+}
+
+.card:hover{
+    bottom: 20px;
+}
+
+.card-nou{
+    color: white;
+    padding: 2px 4px;
+    border-radius: 5px;
+    background-color: red;
+    z-index : 2;
+    position: absolute;
+    top: 5px;
+    right : 60px;
+}
+
+#card-pop{
+    background-color: green;
+    z-index: 1;
+    left : 10px;
+}
+
+
+/* Elementul cu id="despre" */
+
+#despre {
+    color: #333;
+}
+
+/* LISTE */
+
+ul,
+ol {
+    line-height: 1.8;
+}
+
+
+/* IMAGINE */
+
+.image-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.image-section img:hover {
+    position: relative;
+    top:30px;
+}
+
+/* BUTON */
+
+.buton {
+    background-color: blue;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+    width: 100%;
+    min-width: 200px;
+    max-width : 400px;
+}
+
+.buton-section {
+    display: flex;
+    justify-content: center; /* Centrare pe orizontală */
+    align-items: center;     /* Centrare pe verticală */
+}
+
+/* Efect când cursorul este deasupra butonului */
+.buton:hover {
+    background-color: darkblue;
+}
+
+
+/* TABEL */
+
+.table-section {
+    padding: 40px;
+    text-align: center;
 }
 
 table {
-  background-color: pink;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
 }
 
-button {
-  padding-top: 100px; /* spatiu in interiorul butonului */
-  margin: 100px; /* spatiu inafara butonului */
-  border: 7px dashed red;
+th,
+td {
+    border: 1px solid #333;
+    padding: 12px 20px;
 }
 
-li {
-  list-style-type: circle; /* pune cerc in fata elementelor lsitei */
+th {
+    background-color: #333;
+    color: white;
 }
 
-iframe {
-  display: none; /*ascunde elementul din tag-ul iframe */
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-list {
-    display : flex;
-    gap : 15px;
+footer a {
+    color: white;
 }
