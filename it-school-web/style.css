@@ -1,0 +1,193 @@
+:root {
+--text-light: #eaeaea;
+--button-color: #2bb686;
+--fs-medium: 0.875rem;
+--spacing-medium: 1rem;
+}
+
+body {
+    background-color: white;
+    margin : 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+    /* Section header */
+
+header{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141e4c;
+    position: fixed;
+    width : 100%;
+    margin-top: 0px;
+}
+
+.dropdown ul{
+    display: none;
+}
+
+.dropdown:hover ul {
+    display : block;
+}
+
+.nav-list {
+    display : flex;
+    padding: 20px 20px 20px 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-list a {
+    padding-left: 10px;
+    color: white;
+}
+
+ul{
+    position: absolute;
+}
+
+.logo{
+    display : flex;
+    justify-content: left;
+    height: 50px;
+    padding: 10px 10px 10px 20px;
+}
+
+    /* Section welcome */
+
+.section-welcome {
+    color: white;
+    background-color: #141e4c;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-direction: column;
+    padding-left: 20px;
+} 
+
+.container1 img {
+    width: auto;
+    height: 24px;
+    margin-left: 5px;
+}
+
+.section-welcome a {
+    color: var(--text-light);
+    background-color: var(--button-color);
+    font-size: var(--fs-medium);
+    text-transform: uppercase;
+    text-align: center;
+    padding: var(--spacing-medium);
+    border: 2px solid var(--button-color);
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 260px;
+}
+
+    /* Section calendar */
+
+.section-calendar{
+    background-color: white;
+}
+
+.container2 h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    background-color: white;
+}
+
+.container3 {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    gap : 10px;
+    padding-top: 30px;
+}
+
+.card{
+    width : 300px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.badges{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calendar{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.calendar i {
+    margin-right: 3px;
+}
+
+.location{
+    color : black;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    padding: 3px;
+}
+
+.location i {
+    margin-right: 3px;
+}
+
+
+.bar{
+    background-color: green;
+    height: 3px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 786px){ 
+    .card {
+        width: 100%;
+    }
+}
+
+    /* Section what */
+
+.section-what {
+    background-color: rgb(196, 231, 231);
+}
+
+.container4{
+    text-align: center;
+    min-width: 320px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-dim{
+    width: 50%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.image-dim img{
+    width : 100%;
+    height: auto;
+}
